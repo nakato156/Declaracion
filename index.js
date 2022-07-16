@@ -144,7 +144,7 @@ function final1(){
 function check_final1(pregunta_){
     serie = ""
     for (const el of pregunta_) {
-        serie+= `${el.children[0].value}`
+        serie+= `${el.children[0].value}`.toLowerCase();
     }
     let result = CryptoJS.AES.decrypt("U2FsdGVkX19VNn2PPb720g1Iv9WDjvitGTRQUgZZIjUj5b0xSaJYaWl1Wk7ERv1O", serie).toString(CryptoJS.enc.Utf8)
     result = result ? result : CryptoJS.AES.decrypt("U2FsdGVkX19pSlgFi1vz53eXw7zN7gQNU7QDrRLrzFKn3wtZqGap5GrDeFP3fSs4", serie).toString(CryptoJS.enc.Utf8)
@@ -181,8 +181,9 @@ function check_final1(pregunta_){
         } else{
             configTyped["strings"] = ['Bien hecho.', 'Espero te hayas divrtido', 'Ahora.... no sé', result];
             const typed = new Typed(".typed", configTyped)
-
         }
+    }else{
+        block.style.color = "red";
     }
 }
 

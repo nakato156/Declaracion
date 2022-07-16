@@ -44,7 +44,7 @@ body{
 }
 .tobe{
     margin: auto;
-    width: 300px;
+    /* width: 300px; */
 }
 .maxi{
     max-width: 80px;
