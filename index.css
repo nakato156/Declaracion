@@ -1,0 +1,51 @@
+body{
+    background: #ccc;
+}
+.bx {
+    cursor: pointer;
+}
+.readme{
+    font-size: 30px;
+}
+.desbloquear{
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+}
+.desbloquear>i{
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+}
+.letras {
+    font-size: 40px;
+    padding: 0px;
+    text-align: center;
+}
+.acertijos{
+    height: calc(80vh - 100px);
+    display: flex;
+    flex-wrap: wrap;
+}
+.enunciado{
+    top: 100px;
+    position: absolute;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+}
+.primero, .segundo, .tercero, .cuarto, .final{
+    flex-wrap: wrap;
+    vertical-align: auto;
+    display: flex;
+    width: 40%;
+    margin: auto;
+}
+.tobe{
+    margin: auto;
+    width: 300px;
+}
+.maxi{
+    max-width: 80px;
+}
